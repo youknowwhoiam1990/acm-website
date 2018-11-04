@@ -1,0 +1,264 @@
+<html>
+<head>
+<title>ACM Student Chapter</title>   
+    <link rel="stylesheet" type="text/css" href="signup.css">
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ACM Student Chapter</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="img/logos/acm.png">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+    
+    <link href="form_css.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="new.css" rel="stylesheet">
+   
+    <script>
+            function validname()
+            {
+                var name=document.registration.first_name.value;
+                if(name=="")
+                    {
+                        alert("* First name can't be Empty");
+                        return false;
+                    }
+                if(!isNaN(name))
+                    {
+                        alert("* Invalid Name");
+                        return false;
+                    }
+                return true;
+            }
+            function validlname()
+            {
+                var laname=document.registration.last_name.value;
+                if(laname=="")
+                    {
+                        alert("* Last name can't be Empty");
+                        return false;
+                    }
+                if(!isNaN(laname))
+                    {
+                        alert("* Invalid Name");
+                        return false;
+                    }
+                return true;
+            }
+            function validemail()
+            {
+                var mail=document.registration.email.value;
+                var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                if(mail=="")
+                    {
+                        alert("* Email can't be Empty");
+                        return false;
+                    }
+                if(!isNaN(mail))
+                    {
+                        alert("* Invalid Email");
+                        return false;
+                    }
+                if (!filter.test(mail)) {
+                    alert('Please provide a valid email address');
+                    mail.focus;
+                    return false;}
+                return true;
+            }
+            function validemaill()
+            {
+                var mail=document.signinwith.email.value;
+                var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                if(mail=="")
+                    {
+                        alert("* Email can't be Empty");
+                        return false;
+                    }
+                if (!filter.test(mail)) {
+                    alert('Please provide a valid email address');
+                    mail.focus;
+                    return false;}
+                return true;
+            }
+            function validcname()
+            {
+                var college=document.registration.college.value;
+                if(college=="")
+                    {
+                        alert("* College name can't be Empty");
+                        return false;
+                    }
+                if(!isNaN(college))
+                    {
+                        alert("* Invalid College name");
+                        return false;
+                    }
+                return true;
+            }
+            function validrno()
+            {
+                var roll=document.registration.roll_no.value;
+                if(roll=="")
+                    {
+                        alert("* Roll number can't be Empty");
+                        return false;
+                    }
+             
+                return true;
+            }
+            function validnumber()
+            {
+                var n=document.registration.number.value;
+                if(n=="")
+                    {
+                        alert("* Mobile number can't be Empty");
+                        return false;
+                    }
+                if(isNaN(n))
+                    {
+                        alert("* Invalid Mobile Number");
+                        return false;
+                    }
+                if((n.charAt(0)!=9) && (n.charAt(0)!=8) && (n.charAt(0)!=7))
+                    {
+                        alert("* Invalid Mobile Number");
+                        return false;
+                    }
+                if(n.length!=10)
+                    {
+                        alert("* Invalid Mobile Number");
+                        return false;
+                    }
+                return true;
+            }
+            function validpass()
+            {
+                var p=document.registration.password.value;
+                if(p=="")
+                    {
+                        alert("* Password can't be Empty");
+                        return false;
+                    }
+            }
+            function validpassword()
+            {
+                var p=document.registration.password.value;
+                var rp=document.registration.password2.value;
+                if(rp!=p)
+                    {
+                        alert("Password don't match");
+                        return false;
+                    }
+                return true;
+            }
+        </script>
+</head>
+<body id="page-top">
+     
+      <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" >
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logos/acm.png"height="8%" width="15%"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="program.html" target="_self"><font >Programs</font></a>
+            </li>
+            <li class="nav-item"  style=":hover{color: aliceblue};">
+                <a class="nav-link js-scroll-trigger" href="about.html"><font >About</font></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="signup.html"><font >Signup/Login</font></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="team.html"><font >Team</font></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div id="login-box">
+      <div class="left-box">
+        <h1> Sign Up</h1>
+          <form name="registration" action="C:\wamp64\www\project\connect1.php" method="post">
+            <fieldset>
+            
+                <input type="text" placeholder="First Name" name="first_name" value=""/>
+                            
+                <input type="text" placeholder="Last Name" name="last_name" value="" onclick="validname();"/>
+          
+                <input type="text" name="email" placeholder="Email" value="" onclick="validname();validlname();" />
+          
+                <input type="text" name="college" placeholder="College name" value="" onclick="validname();validlname();validemail();"/>
+          
+                <input type="text" name="roll_no" placeholder="College Roll no" value="" onclick="validname();validlname();validemail();validcname();"/>
+         
+                <input type="text" name="number" placeholder="Mobile Number" value="" onclick="validname();validlname();validemail();validcname();validrno();"/>
+
+                <input type="password" name="password" placeholder="Password" value="" onclick="validname();validlname();validemail();validcname();validrno();validnumber();" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>
+        
+                <input type="password" name="password2" placeholder="Retype password" value="" onclick="validname();validlname();validemail();validcname();validrno();validnumber();validpass()"/>
+                </fieldset>
+        
+                <input type="submit" name="signup-button" value="Sign Up"     onclick="validname();validlname();validemail();validcname();validrno();validnumber();validpassword();"/>
+          </form>
+        </div>
+        <div class="right-box">
+            <form name="signinwith" action="C:\wamp64\www\project\action.php" method="post">
+            <span class="signinwith"> Log In </span>
+            <input type="text" name="email" placeholder="Email" value=""/>
+            <input type="text" name="password" placeholder="Password" value="" onclick="validemaill();"/>
+            <a href= "#" id = "forgot"><font color = "red">Forget password?</font></a><br>
+        
+        <br><button class="social facebook">Login</button>    
+            </form>
+            
+
+        </div>
+        <div class="or">OR</div>
+    </div>
+        <!-- Footer -->
+    <footer>
+      <div class="container">
+        
+        
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+                </ul>
+        
+      </div>
+    </footer>
+</body>    
+</html>

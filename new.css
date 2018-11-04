@@ -1,0 +1,12 @@
+.acm
+{background-image: url(acm.jpg);
+    height: 100%;
+    
+    width: 100%;
+    position: fixed;
+background-size: cover;
+
+text-align: justify;
+    color:Black;
+
+}

@@ -1,0 +1,40 @@
+marquee{
+    margin-top: 30%;    
+    margin-bottom: -10%;
+    color: #0fa982;
+    font-size: 40px;
+}
+.workshop{
+   
+    background:  url(img/about/workshop-background.jpg)no-repeat 0;
+     height: 100%;
+    background-size: cover;
+     width: 100%;
+}
+.events{
+   
+    background:  url(img/about/event-background.jpg)no-repeat 0;
+     height: 100%;
+    background-size: cover;
+     width: 100%;
+}
+.seminar{
+   
+    background:  url(img/about/seminar_background.png)no-repeat 0;
+     height: 100%;
+    background-size: cover;
+     width: 100%;
+}
+.workshop h1{
+    background-color: rgba(1,2,3,0);
+    
+    
+}
+.marquee1{
+        margin-top: 30%;    
+    margin-bottom: -10%;
+    color: #0fa915;
+    font-size: 40px;
+
+    
+}
